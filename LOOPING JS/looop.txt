@@ -1,0 +1,23 @@
+
+//Algoritma Pendataan Barang
+
+//Input untuk membutuhkan berapa banyak jumlah data kosong yang diperlukan
+let prom = prompt("Masukkan jumlah data barang :")
+
+//Tempat untuk menyimpan data nama barang dan jumlah barang
+let array = [];
+let jumray = [];
+
+//lopping sesuai Jumlah data yang ditentukan
+for (i = 0; i <= prom ; i++) {
+    //Variabel barang untuk menyimpan nama barang lalu ditambahh araay.push untuk menambah data dan dimasukkan ke dalam arraay yang sudah dibuat
+    let barang = prompt("Masukkan Nama barang ke- " +i)
+    array.push(barang);     
+
+    //Variabel barang untuk menyimpan jumlahh barang barang lalu ditambahh jumray.push untuk menambah data dan dimasukkan ke dalam arraay yang sudah dibuat
+    let jumlah = prompt("Masukkan jumlaah barang ke-" +i)
+    jumray.push(jumlah)
+}
+
+//Menampilkan hasil dengan console.table
+console.table("Nama Barang : ", array, "Jumlaah barang", jumray);

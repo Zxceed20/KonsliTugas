@@ -1,0 +1,201 @@
+header {
+    background-color: #4A306D;
+    color: #fff;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 12px;
+    list-style: none;
+}
+
+nav ul li a:hover {
+    color: #D3BCCC;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 40px 80px;
+}
+  
+#introduction {
+    display: flex;
+    gap: 24px;
+    border-bottom: 1px solid #D3BCCC;
+    padding-bottom: 24px;
+}
+  
+#introduction img {
+    width: 300px;
+    height: 300px;
+}
+  
+#introduction h2 {
+    font-size: 48px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.image {
+    width: 50px;
+    height: 50px;
+}
+
+.project {
+    border: #D3BCCC solid 2px;
+    border-radius: 5px;
+}
+
+.project .imag img {
+    width: 100%;
+    height: auto;
+}
+
+#contact {
+    display: grid;
+    grid-column: auto;
+    gap: 10px;
+}
+
+footer {
+    background-color: #4A306D;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    margin-bottom: 10px;
+}
+
+.footer-content h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    margin: 0;
+    color: #bbb;
+}
+
+.image {
+    border-radius: 50%;
+}
+
+
+.submit {
+    background-color: #4A306D;
+    color: white;
+}
+
+.butt {
+    background-color: antiquewhite;
+    color: black;
+}
+
+.buttt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.imag {
+    padding: 5px;
+}
+
+.pa {
+    padding: 5px;
+}
+
+.project h3 {
+    padding: 5px;
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding: 10px 50px;
+    }
+
+    #introduction {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 40px;
+    }
+
+    #introduction img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 40px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #introduction {
+        padding: 5px;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+        padding: 5px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+.submit:active {
+    background-color: #D3BCCC;
+    color: black;
+}
