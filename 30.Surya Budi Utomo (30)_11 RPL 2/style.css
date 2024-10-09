@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.amazon {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px 50px repeat(3, 1fr); 
+    grid-template-areas: 
+    "header header header header header header"
+    "navbar navbar navbar navbar navbar navbar"
+    "box1 box1 box1 box2 box2 box2"
+    "box3 box3 box3 box4 box4 box4"
+    "footer footer footer footer footer footer";
+    grid-gap: 5px;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+/* tablet */
+@media (max-width: 1024px) {
+    .amazon {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 100px 50px repeat(3, 1fr); 
+        grid-template-areas: 
+        "header header header header header header"
+        "navbar navbar navbar navbar navbar navbar"
+        "box1 box1 box1 box2 box2 box2"
+        "box3 box3 box3 box4 box4 box4"
+        "footer footer footer footer footer footer";
+        grid-gap: 5px;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+/* mobile */
+@media (max-width: 640px) {
+    .amazon {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header header"
+        "navbar navbar"
+        "box1 box1"
+        "box2 box2"
+        "box3 box3"
+        "box4 box4"
+        "footer footer";
+        grid-gap: 5px;
+    }
+}
+
+/* very small devices */
+@media (max-width: 230px) {
+    .amazon {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header"
+        "navbar"
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "footer";
+        grid-gap: 5px;
+    }
+}
+
+.child {
+    background-color: aqua;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child.navbar {
+    background-color: rebeccapurple;
+    grid-area: navbar;
+    height: 50px; 
+}
+
+.child.menu {
+    background-color: blueviolet;
+    grid-area: menu;
+}
+
+.child.header {
+    background-color: cadetblue;
+    grid-area: header;
+}
+
+.child.footer {
+    background-color: rgb(9, 37, 48);
+    grid-area: footer;
+}
+
+.child.box1 {
+    background-color: black;
+    grid-area: box1;
+}
+
+.child.box2 {
+    background-color: aqua;
+    grid-area: box2;
+}
+
+.child.box3 {
+    background-color: rgb(255, 0, 0);
+    grid-area: box3;
+}
+
+.child.box4 {
+    background-color: rgb(211, 248, 0);
+    grid-area: box4;
+}
